@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/persistenceOne/assetMantle/application"
 	"os"
 	"path"
+
+	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/persistenceOne/assetMantle/application"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/keys"
@@ -13,7 +14,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/rpc"
 	sdkTypes "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
+
 	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/cosmos/cosmos-sdk/x/auth/client"
 	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
 	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
 	authrest "github.com/cosmos/cosmos-sdk/x/auth/client/rest"
