@@ -332,6 +332,10 @@ func NewApplication(
 		classificationModule.GetAuxiliary(conform.AuxiliaryName),
 		metasModule.GetAuxiliary(scrub.AuxiliaryName),
 	)
+	maintainers.Module.Initialize(
+		classificationModule.GetAuxiliary(conform.AuxiliaryName),
+		identitiesModule.GetAuxiliary(verify.AuxiliaryName),
+	)
 	splitsModule := splits.Module.Initialize(
 		application.supplyKeeper,
 		identitiesModule.GetAuxiliary(verify.AuxiliaryName),
