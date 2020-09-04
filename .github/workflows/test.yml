@@ -8,9 +8,12 @@ on:
 
 jobs:
   test:
-    name: Build
+    name: Test
     runs-on: ubuntu-latest
     steps:
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v2
+
       - name: Run JMeter Tests
         uses: rbhadti94/apache-jmeter-action@v0.2.0
         with:
