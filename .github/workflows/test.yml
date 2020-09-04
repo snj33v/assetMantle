@@ -1,0 +1,14 @@
+name: Test
+
+on:
+  push:
+    branches: [master, actions]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    - name: Run JMeter Tests
+      uses: rbhadti94/apache-jmeter-action@v0.2.0
+      with:
+        testFilePath: .jmeter/assetMantleTestCases.jmx
